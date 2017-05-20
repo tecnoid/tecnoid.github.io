@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+  <title>NOVO POST</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	<!-- include libraries(jQuery, bootstrap) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+
+    <!-- include summernote css/js-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+
+</head>
+<body class="container">
+
+<header class="row">
+      <div class="col-md-10">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="index.html#" class="navbar-brand">
+                <img alt="Tecnoid" title="Tecnoid" src="img/logo.png" width="30%">
+              </a>
+            </div><!-- navbar-header -->
+
+  <!-- MENU -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="alterarconta.html">RONALDO WINCHESTER</a></li>
+                <li><a href="index.html">SAIR</a></li>                
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- container-fluid -->
+        </nav>
+      </div>
+    </header>
+<br><br><br>
+
+<div class="row">
+	<div class="col-md-12">
+		<ul class="nav nav-pills">
+			<li role="presentation">
+				<a href="usuario.html">Gerenciar Postagens</a>
+			</li>
+          	<li role="presentation" class="active">
+          		<a href="novopost.html">Nova Postagem</a>
+          	</li>				
+		</ul>
+	</div>
+</div>
+
+
+<br><br><br><br>
+
+<div class="row">
+	<div class="col-md-10 col-md-offset-1">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<legend>Nova Postagem</legend>
+				<form>
+					<div class="row">
+						<div class="col-md-6">
+							<input type="text" placeholder="TITULO" class="form-control">
+						</div>
+						<div class="col-md-4">
+							<select class="form-control">
+								<option selected>CATEGORIA</option>
+								<option>TECNOLOGIA</option>
+								<option>MULTIMÍDIA</option>
+								<option>SOFTWARES</option>
+								<option>JOGOS E APLICATIVOS</option>
+								<option>DICAS</option>
+							</select>
+						</div>
+						<div class="col-md-2">
+							<select class="form-control">
+							<option selected>STATUS</option>
+							<option>PUBLICADO</option>
+							<option>RASCUNHO</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						 <div class="col-md-8">
+						 	<br>
+						 	<label>Selecionar imagem</label>
+						 	<input type="file">
+						 </div>
+					</div>
+					<br>
+					<script>
+						$(document).ready(function(){
+							$('#summernote').summernote();
+						});
+					</script>
+					<div id="summernote">
+						<br>Escreva aqui<br>
+					</div>
+					<button class="btn btn-success btn-block">
+					PUBLICAR</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br><br><br>
+<div class="row rowRodape">
+  <div class="col-xs-4">
+    <img alt="Tecnoid" title="Tecnoid" src="img/logo.png" width="60%">
+        </a>
+  </div>
+
+  <div class="col-xs-4 text-center">
+      <br>
+      Tecnoid | 2017
+  </div>
+<!-- Rodapé -->
+
+  <div class="col-md-4 text-right">
+     SIGA-NOS NAS REDES SOCIAIS<br>
+      <a href="http://instagram.com/ronaldo__winchester" title="Instagram" target="_blank" class="btn btn-default btn-sm"><span class="fa fa-instagram"></span></a>
+      <a href="http://www.facebook.com/ronaldo.winchester17" title="Facebook" target="_blank" class="btn btn-default btn-sm"><span class="fa fa-facebook"></span></a>
+      <a href="http://www.youtube.com/channel/UClihjQT6NFwo1vRF68VUXlg" title="Youtube" target="_blank" class="btn btn-default btn-sm"><span class="fa fa-youtube"></span></a>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
